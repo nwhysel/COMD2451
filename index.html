@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="my-styles.css">
+</head>
+<body>
+
+<header class="w3-container w3-green">  <!--w3-container adds 16 pixels of padding around each element; w3-green makes the background green -->
+    
+  <h1>Noreen Whysel - Portfolio</h1>
+	<nav>
+        <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+	</nav>
+</header>
+
+<div class="w3-container">
+    <h2>Cost Rica Photo Gallery</h2>
+</div>
+    
+  <section class="w3-container">
+  <p>Below shows three row images that use different combinations of row styles to create a gallery page. Each row is a &lt;section&gt; that has three images. Each image is part of a set of markup that includes a heading and a paragraph holding the image. The heading and image are contained in an &lt;article&gt; element.</p>
+  </section>
+    
+  <section class="w3-container"> <!-- w3-container adds 16 pixels of padding around each element -->
+     
+  <p>The w3-row class defines a padded-less container:</p>
+      <p>&lt;section class="w3-row"&gt;<br />
+      &lt;article class="w3-col s12 m4 l4"&gt;</p>
+  </section>
+    
+  <section class="w3-row"> <!-- In this row, we  have the w3-row class only, which defines a padded-less container. Without the w3-container property, you don't get padding between the elements. -->
+      
+    <article class="w3-col s12 m4 l4">
+        <h3>Grass Snake</h3>
+        <p><img src="Vine-Snake.jpg" /></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3><a name="mantis">Praying Mantis</a></h3>
+        <p><a href="mantis.jpg"><img src="mantis.jpg" /></a></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3>Jaguar</h3>
+        <p><img src="Jaguar.jpg" /></p>
+    </article>
+  </section>
+ 
+  <section class="w3-container">
+     
+  <p>While the w3-row class defines a padded-less container, when you also have w3-container, it adds 16 pixel padding around the entire row, but not between the contained elements:</p>
+      <p>&lt;section class="w3-container w3-row"&gt;<br />
+      &lt;article class="w3-col s12 m4 l4"&gt;</p>
+  </section>
+
+    <section class="w3-container w3-row"> <!-- While the w3-row class defines a padded-less container, when you also have w3-container, it adds 16 pixel padding around the entire row, but not between the contained elements -->
+      
+    <article class="w3-col s12 m4 l4">
+        <h3>Grass Snake</h3>
+        <p><img src="Vine-Snake.jpg" /></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3><a name="mantis">Praying Mantis</a></h3>
+        <p><a href="mantis.jpg"><img src="mantis.jpg" /></a></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3>Jaguar</h3>
+        <p><img src="Jaguar.jpg" /></p>
+    </article>
+  </section>
+ 
+  <section class="w3-container">
+  <p>The w3-row-padding class adds a 8px left and right padding to each column:</p>
+      <p>&lt;section class="w3-row-padding"&gt;<br />
+      &lt;article class="w3-col s12 m4 l4"&gt;</p>
+  </section>
+
+  <section class="w3-row-padding"> <!-- The w3-row-padding class adds 8 pixels of padding around each element.  -->
+      
+    <article class="w3-col s12 m4 l4">
+        <h3>Grass Snake</h3>
+        <p><img src="Vine-Snake.jpg" /></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3><a name="mantis">Praying Mantis</a></h3>
+        <p><a href="mantis.jpg"><img src="mantis.jpg" /></a></p>
+      </article>
+    <article class="w3-col s12 m4 l4">
+        <h3>Jaguar</h3>
+        <p><img src="Jaguar.jpg" /></p>
+      </article>
+  </section>
+
+  <section class="w3-container">
+  <p>You can add as many images as you want and they will wrap according to the w3-col class you set for small (s), medium (m) and large (l) screens. The following is only one row defined by the w3-row-padding class, but since each article is set to span 4 column widths in medium and large screens, it will wrap after the third article.</p>
+  </section>
+
+  <section class="w3-row-padding">
+      
+    <article class="w3-col s12 m4 l4">
+        <h3>Grass Snake</h3>
+        <p><img src="Vine-Snake.jpg" /></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3>Praying Mantis</h3>
+        <p><img src="mantis.jpg" /></p>
+      </article>
+    <article class="w3-col s12 m4 l4">
+        <h3>Jaguar</h3>
+        <p><img src="Jaguar.jpg" /></p>
+      </article>
+          <article class="w3-col s12 m4 l4">
+        <h3>Coatimundi</h3>
+        <p><img src="Coatimundi.jpg" /></p>
+    </article>
+    <article class="w3-col s12 m4 l4">
+        <h3>Tree Iguana</h3>
+        <p><img src="Tree_iguana.jpg" /></p>
+      </article>
+  </section>
+    
+  <section class="w3-container">
+     
+  <p>You can use this page as a template for your portfolio website. Decide which of the above row styles you like and delete the others. You can also delete the training paragraphs unless you want to use these for your own copy.</p>
+  <p>We will also learn how to correct the uneven image sizes in a later lecture.</p>
+
+  </section>  
+
+        <footer>
+			<p>&copy; Copyright 2020</p>
+		</footer>
+	</body>
+</html>
